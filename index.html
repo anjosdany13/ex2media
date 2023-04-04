@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 960px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .content {
+            flex: 1;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 767px) {
+            header {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .content {
+                flex-basis: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            header {
+                font-size: 28px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .content {
+                flex-basis: calc(33.33% - 40px);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            header {
+                font-size: 36px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .content {
+                flex-basis: calc(33.33% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <section>
+        <div class="content">
+            <h2>Feature</h2>
+        </div>
+
+        <div class="content">
+            <h2>Feature</h2>
+        </div>
+
+        <div class="content">
+            <h2>Feature</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h2>Sign Up</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>Content</p>
+    </footer>
+</body>
+</html>
